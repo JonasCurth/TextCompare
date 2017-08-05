@@ -1,0 +1,65 @@
+﻿<UserControl x:Class="TextComparerInterface.Controls.ComparerTextBox.ComparerTextBox"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:TextComparerInterface.Controls.ComparerTextBox"
+             xmlns:toolkit="http://schemas.xceed.com/wpf/xaml/toolkit"
+             xmlns:locked="clr-namespace:TextComparerInterface.Controls.LockButton"
+             mc:Ignorable="d" 
+             
+             d:DesignHeight="300" d:DesignWidth="300" x:Name="Comparer">
+
+    <DockPanel Margin="5" Grid.Column="0">
+        
+        <DockPanel  DockPanel.Dock="Top">
+
+            <ToggleButton IsChecked="{Binding IsLocked, RelativeSource={RelativeSource AncestorType=UserControl}}"
+                          Template="{StaticResource IsEditableButtonTemplate}"
+                          Width="30"
+                          x:Name="IsLockedButton"
+                          DockPanel.Dock="Right">
+                <Image Stretch="Uniform">
+                    <Image.Style>
+                        <Style TargetType="{x:Type Image}">
+                            <Style.Triggers>
+                                <DataTrigger Binding="{Binding IsChecked, ElementName=IsLockedButton}" Value="True">
+                                    <Setter Property="Source" Value="/TextComparerInterface;component/Icons/IsLocked.png"/>
+                                </DataTrigger>
+                                <DataTrigger Binding="{Binding IsChecked, ElementName=IsLockedButton}" Value="False">
+                                    <Setter Property="Source" Value="/TextComparerInterface;component/Icons/IsUnlocked.png"/>
+                                </DataTrigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Image.Style>
+                </Image>
+            </ToggleButton>
+
+            <Button IsTabStop="False"
+                    Background="Transparent" 
+                    BorderThickness="0" 
+                    Template="{DynamicResource SelectTextButtonTemplate}" 
+                    Height="30" 
+                    FontSize="20" 
+                    FontWeight="Bold" 
+                    Content="{Binding Title, ElementName=Comparer}"
+                    Command="{Binding Command, RelativeSource={RelativeSource AncestorType=UserControl}}"/>
+        </DockPanel>
+        
+        <Border BorderThickness="1" 
+                BorderBrush="Black" 
+                CornerRadius="0 0 10 10"
+                Padding="4"
+                DockPanel.Dock="Bottom">
+
+            <toolkit:RichTextBox BorderThickness="0" 
+                                 Background="Transparent"
+                                 Text="{Binding Text, RelativeSource={RelativeSource AncestorType=UserControl}}"
+                                 IsReadOnly="{Binding IsChecked, ElementName=IsLockedButton}">
+                <toolkit:RichTextBox.TextFormatter>
+                    <toolkit:XamlFormatter/>
+                </toolkit:RichTextBox.TextFormatter>
+            </toolkit:RichTextBox>
+        </Border>
+    </DockPanel>
+</UserControl>

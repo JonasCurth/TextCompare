@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TextComparerInterface", "TextComparerInterface\TextComparerInterface.csproj", "{098EA321-D989-4864-980B-7F290EFB1AFB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DiffMatchPatch", "..\DiffMatchPatch\DiffMatchPatch.csproj", "{24D767FD-C4D0-40BB-9602-5FF7054F9CBD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{098EA321-D989-4864-980B-7F290EFB1AFB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{098EA321-D989-4864-980B-7F290EFB1AFB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{098EA321-D989-4864-980B-7F290EFB1AFB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{098EA321-D989-4864-980B-7F290EFB1AFB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{24D767FD-C4D0-40BB-9602-5FF7054F9CBD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{24D767FD-C4D0-40BB-9602-5FF7054F9CBD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{24D767FD-C4D0-40BB-9602-5FF7054F9CBD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{24D767FD-C4D0-40BB-9602-5FF7054F9CBD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
