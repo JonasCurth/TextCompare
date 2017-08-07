@@ -16,7 +16,7 @@ namespace utils
         // Number of seconds to map a diff before giving up (0 for infinity).
         public float Timeout = 1.0f;
         // Cost of an empty edit operation in terms of edit characters.
-        public short EditCost = 4;
+        public short EditCost = 4 ;
 
 
         //  DIFF FUNCTIONS
