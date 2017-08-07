@@ -4,16 +4,16 @@
 winexe
 C#
 .cs
-D:\OneDrive\Arbeit\TextComparer\TextComparerInterface\obj\Debug\
+C:\Users\curth\Source\Repos\TextCompare\TextComparer\TextComparerInterface\obj\Debug\
 TextComparerInterface
 none
 false
 DEBUG;TRACE
-D:\OneDrive\Arbeit\TextComparer\TextComparerInterface\App.xaml
+C:\Users\curth\Source\Repos\TextCompare\TextComparer\TextComparerInterface\App.xaml
 3-195347034
 8-554976
 101044269929
-23-1819582639
+23383456154
 Controls\LockButton\LockButton.xaml;Controls\ComparerTextBox\ComparerTextBox.xaml;MainWindow.xaml;
 
 False

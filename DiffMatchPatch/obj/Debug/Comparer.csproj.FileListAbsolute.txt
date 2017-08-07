@@ -1,0 +1,5 @@
+C:\Users\curth\Source\Repos\TextCompare\DiffMatchPatch\bin\Debug\utils.dll
+C:\Users\curth\Source\Repos\TextCompare\DiffMatchPatch\bin\Debug\utils.pdb
+C:\Users\curth\Source\Repos\TextCompare\DiffMatchPatch\obj\Debug\Comparer.csprojResolveAssemblyReference.cache
+C:\Users\curth\Source\Repos\TextCompare\DiffMatchPatch\obj\Debug\utils.dll
+C:\Users\curth\Source\Repos\TextCompare\DiffMatchPatch\obj\Debug\utils.pdb
