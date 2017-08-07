@@ -142,9 +142,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\DiffMatchPatch\DiffMatchPatch.csproj">
+    <ProjectReference Include="..\..\DiffMatchPatch\Comparer.csproj">
       <Project>{24d767fd-c4d0-40bb-9602-5ff7054f9cbd}</Project>
-      <Name>DiffMatchPatch</Name>
+      <Name>Comparer</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

@@ -1,11 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26430.14
+VisualStudioVersion = 15.0.26430.16
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TextComparerInterface", "TextComparerInterface\TextComparerInterface.csproj", "{098EA321-D989-4864-980B-7F290EFB1AFB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DiffMatchPatch", "..\DiffMatchPatch\DiffMatchPatch.csproj", "{24D767FD-C4D0-40BB-9602-5FF7054F9CBD}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Comparer", "..\DiffMatchPatch\Comparer.csproj", "{24D767FD-C4D0-40BB-9602-5FF7054F9CBD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

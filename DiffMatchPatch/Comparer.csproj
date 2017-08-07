@@ -40,15 +40,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Cleanup\Comparer.cs" />
     <Compile Include="Comparer.cs" />
     <Compile Include="Extensions\CompatibilityExtensions.cs" />
     <Compile Include="Objects\Diff.cs" />
     <Compile Include="Objects\Operation.cs" />
-    <Compile Include="Patcher.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Cleanup\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
