@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\curth\Source\Repos\TextCompare\TextComparer\TextComparerInterface\App.xaml
-3-195347034
+4-1268382313
 8-554976
-101044269929
-23383456154
-Controls\LockButton\LockButton.xaml;Controls\ComparerTextBox\ComparerTextBox.xaml;MainWindow.xaml;
+12-2013245422
+23-1667367176
+Controls\ComparerTextBox\BindableRichtextbox.xaml;Controls\LockButton\LockButton.xaml;Controls\ComparerTextBox\ComparerTextBox.xaml;MainWindow.xaml;
 
 False
 

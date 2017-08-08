@@ -100,5 +100,10 @@ namespace TextComparerInterface.Controls.ComparerTextBox
             // Set Document property
             SetValue(DocumentProperty, this.TextBox.Document);
         }
+
+        private void OnTextBoxSelectionChanged(object sender, RoutedEventArgs e)
+        {
+            
+        }
     }
 }

@@ -90,14 +90,12 @@ C:\Users\curth\Source\Repos\TextCompare\TextComparer\TextComparerInterface\obj\D
 C:\Users\curth\Source\Repos\TextCompare\TextComparer\TextComparerInterface\bin\Debug\TextComparerInterface.exe.config
 C:\Users\curth\Source\Repos\TextCompare\TextComparer\TextComparerInterface\bin\Debug\TextComparerInterface.exe
 C:\Users\curth\Source\Repos\TextCompare\TextComparer\TextComparerInterface\bin\Debug\TextComparerInterface.pdb
-C:\Users\curth\Source\Repos\TextCompare\TextComparer\TextComparerInterface\bin\Debug\utils.dll
 C:\Users\curth\Source\Repos\TextCompare\TextComparer\TextComparerInterface\bin\Debug\Xceed.Wpf.AvalonDock.dll
 C:\Users\curth\Source\Repos\TextCompare\TextComparer\TextComparerInterface\bin\Debug\Xceed.Wpf.AvalonDock.Themes.Aero.dll
 C:\Users\curth\Source\Repos\TextCompare\TextComparer\TextComparerInterface\bin\Debug\Xceed.Wpf.AvalonDock.Themes.Metro.dll
 C:\Users\curth\Source\Repos\TextCompare\TextComparer\TextComparerInterface\bin\Debug\Xceed.Wpf.AvalonDock.Themes.VS2010.dll
 C:\Users\curth\Source\Repos\TextCompare\TextComparer\TextComparerInterface\bin\Debug\Xceed.Wpf.DataGrid.dll
 C:\Users\curth\Source\Repos\TextCompare\TextComparer\TextComparerInterface\bin\Debug\Xceed.Wpf.Toolkit.dll
-C:\Users\curth\Source\Repos\TextCompare\TextComparer\TextComparerInterface\bin\Debug\utils.pdb
 C:\Users\curth\Source\Repos\TextCompare\TextComparer\TextComparerInterface\bin\Debug\Text2Speech.Commands.pdb
 C:\Users\curth\Source\Repos\TextCompare\TextComparer\TextComparerInterface\bin\Debug\de\Xceed.Wpf.AvalonDock.resources.dll
 C:\Users\curth\Source\Repos\TextCompare\TextComparer\TextComparerInterface\bin\Debug\es\Xceed.Wpf.AvalonDock.resources.dll
@@ -116,3 +114,7 @@ C:\Users\curth\Source\Repos\TextCompare\TextComparer\TextComparerInterface\obj\D
 C:\Users\curth\Source\Repos\TextCompare\TextComparer\TextComparerInterface\obj\Debug\TextComparerInterface.g.resources
 C:\Users\curth\Source\Repos\TextCompare\TextComparer\TextComparerInterface\obj\Debug\TextComparerInterface.Properties.Resources.resources
 C:\Users\curth\Source\Repos\TextCompare\TextComparer\TextComparerInterface\obj\Debug\TextComparerInterface.csproj.GenerateResource.Cache
+C:\Users\curth\Source\Repos\TextCompare\TextComparer\TextComparerInterface\bin\Debug\ComparerLibrary.dll
+C:\Users\curth\Source\Repos\TextCompare\TextComparer\TextComparerInterface\bin\Debug\ComparerLibrary.pdb
+C:\Users\curth\Source\Repos\TextCompare\TextComparer\TextComparerInterface\obj\Debug\Controls\ComparerTextBox\BindableRichtextbox.g.cs
+C:\Users\curth\Source\Repos\TextCompare\TextComparer\TextComparerInterface\obj\Debug\Controls\ComparerTextBox\BindableRichtextbox.baml

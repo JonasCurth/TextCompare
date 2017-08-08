@@ -1,4 +1,0 @@
-C:\Users\curth\OneDrive\Arbeit\DiffMatchPatch\bin\Release\utils.dll
-C:\Users\curth\OneDrive\Arbeit\DiffMatchPatch\bin\Release\utils.pdb
-C:\Users\curth\OneDrive\Arbeit\DiffMatchPatch\obj\Release\utils.dll
-C:\Users\curth\OneDrive\Arbeit\DiffMatchPatch\obj\Release\utils.pdb

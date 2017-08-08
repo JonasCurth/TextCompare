@@ -10,14 +10,14 @@
         <TextBlock x:Name="PlaceholderText"
                    Margin="5"
                    Text="{Binding Path=Placeholder, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type UserControl}}}"/>
-        
+
         <RichTextBox x:Name="TextBox" 
                      TextOptions.TextFormattingMode="Ideal" 
                      TextOptions.TextRenderingMode="Aliased" 
                      AcceptsReturn="True" 
                      IsEnabled="{Binding Path=IsEnabled, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type UserControl}}}" 
                      TextChanged="OnTextChanged" 
-                     VerticalScrollBarVisibility="Auto" 
-                     SelectionChanged="OnTextBoxSelectionChanged" />
+                     VerticalScrollBarVisibility="Auto" />
+        <!--SelectionChanged="OnTextBoxSelectionChanged" />-->
     </Grid>
 </UserControl>
