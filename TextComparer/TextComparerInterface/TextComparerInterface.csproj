@@ -77,12 +77,19 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Controls\ComparerTextBox\BindableRichtextbox.xaml.cs">
+      <DependentUpon>BindableRichtextbox.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Controls\LockButton\LockButton.xaml.cs">
       <DependentUpon>LockButton.xaml</DependentUpon>
     </Compile>
     <Compile Include="Helper\XAMLWrapper.cs" />
     <Compile Include="ViewModels\TextCompareViewModel.cs" />
     <Compile Include="ViewModels\ViewModelBase.cs" />
+    <Page Include="Controls\ComparerTextBox\BindableRichtextbox.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Controls\LockButton\LockButton.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
