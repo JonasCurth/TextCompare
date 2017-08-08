@@ -1,17 +1,14 @@
 ﻿using Commands;
+using Compare.Utils;
+using Compare.Utils.Objects;
 using Microsoft.Win32;
 using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text;
-using System.Text.RegularExpressions;
-using System.Threading.Tasks;
-using System.Windows.Documents;
 using System.Windows.Input;
 using TextComparerInterface.Helper;
-using utils;
-using utils.Objects;
 using Xceed.Wpf.Toolkit;
 
 namespace TextComparerInterface.ViewModels

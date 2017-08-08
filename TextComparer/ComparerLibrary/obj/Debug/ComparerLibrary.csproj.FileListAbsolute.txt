@@ -1,0 +1,5 @@
+C:\Users\curth\Source\Repos\TextCompare\TextComparer\ComparerLibrary\bin\Debug\ComparerLibrary.dll
+C:\Users\curth\Source\Repos\TextCompare\TextComparer\ComparerLibrary\bin\Debug\ComparerLibrary.pdb
+C:\Users\curth\Source\Repos\TextCompare\TextComparer\ComparerLibrary\obj\Debug\ComparerLibrary.csprojResolveAssemblyReference.cache
+C:\Users\curth\Source\Repos\TextCompare\TextComparer\ComparerLibrary\obj\Debug\ComparerLibrary.dll
+C:\Users\curth\Source\Repos\TextCompare\TextComparer\ComparerLibrary\obj\Debug\ComparerLibrary.pdb

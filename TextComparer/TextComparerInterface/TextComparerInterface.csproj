@@ -142,15 +142,15 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\DiffMatchPatch\Comparer.csproj">
-      <Project>{24d767fd-c4d0-40bb-9602-5ff7054f9cbd}</Project>
-      <Name>Comparer</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <Content Include="Content\font-awesome.css" />
     <Content Include="Content\font-awesome.min.css" />
     <Content Include="fonts\fontawesome-webfont.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ComparerLibrary\ComparerLibrary.csproj">
+      <Project>{72EA8EE9-6E43-4C9C-B1F0-23209218582C}</Project>
+      <Name>ComparerLibrary</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
