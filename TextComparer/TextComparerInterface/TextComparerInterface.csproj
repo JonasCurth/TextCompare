@@ -83,6 +83,7 @@
     <Compile Include="Controls\LockButton\LockButton.xaml.cs">
       <DependentUpon>LockButton.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Converter\FlowDocumentToXamlConverter.cs" />
     <Compile Include="Converter\InvertBoolToVisibilityConverter.cs" />
     <Compile Include="Helper\XAMLWrapper.cs" />
     <Compile Include="ViewModels\TextCompareViewModel.cs" />
