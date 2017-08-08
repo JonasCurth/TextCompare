@@ -165,8 +165,8 @@ namespace TextComparerInterface.ViewModels
 
             try
             {
-                List<Diff> diffs = difference.Compare(reference, textToCompare, true);
-                this.TextToCompare = diffs.ToXAML();
+                DiffCollection diffCollection = difference.Compare(reference, textToCompare, true);
+                this.TextToCompare = diffCollection.ToXAML();
             }
             catch { }
         }

@@ -43,6 +43,7 @@
     <Compile Include="Comparer.cs" />
     <Compile Include="Extensions\CompatibilityExtensions.cs" />
     <Compile Include="Objects\Diff.cs" />
+    <Compile Include="Objects\DiffCollection.cs" />
     <Compile Include="Objects\Operation.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

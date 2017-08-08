@@ -6,13 +6,22 @@
              xmlns:local="clr-namespace:TextComparerInterface.Controls.ComparerTextBox"
              xmlns:toolkit="http://schemas.xceed.com/wpf/xaml/toolkit"
              xmlns:locked="clr-namespace:TextComparerInterface.Controls.LockButton"
+             xmlns:converter="clr-namespace:TextComparerInterface.Converter"
              mc:Ignorable="d" 
              
              d:DesignHeight="300" d:DesignWidth="300" x:Name="Comparer">
 
-    <DockPanel Margin="5" Grid.Column="0">
+    <UserControl.Resources>
+        <converter:InvertBoolToVisibilityConverter x:Key="invertBool2Vis"/>
+    </UserControl.Resources>
+
+    <Grid Margin="5" Grid.Column="0">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
         
-        <DockPanel  DockPanel.Dock="Top">
+        <DockPanel  Grid.Row="0">
 
             <ToggleButton IsChecked="{Binding IsLocked, RelativeSource={RelativeSource AncestorType=UserControl}}"
                           Template="{StaticResource IsEditableButtonTemplate}"
@@ -45,21 +54,28 @@
                     Content="{Binding Title, ElementName=Comparer}"
                     Command="{Binding Command, RelativeSource={RelativeSource AncestorType=UserControl}}"/>
         </DockPanel>
-        
+
+        <TextBlock Visibility="{Binding IsChecked, ElementName=IsLockedButton, Converter={StaticResource invertBool2Vis}}"
+                   Text="Feature unavailable at the moment."
+                   HorizontalAlignment="Center"
+                   VerticalAlignment="Center"
+                   Grid.Row="1"/>
+
         <Border BorderThickness="1" 
                 BorderBrush="Black" 
                 CornerRadius="0 0 10 10"
                 Padding="4"
-                DockPanel.Dock="Bottom">
+                Grid.Row="1">
 
             <toolkit:RichTextBox BorderThickness="0" 
                                  Background="Transparent"
                                  Text="{Binding Text, RelativeSource={RelativeSource AncestorType=UserControl}}"
-                                 IsReadOnly="{Binding IsChecked, ElementName=IsLockedButton}">
+                                 IsReadOnly="True">
+
                 <toolkit:RichTextBox.TextFormatter>
                     <toolkit:XamlFormatter/>
                 </toolkit:RichTextBox.TextFormatter>
             </toolkit:RichTextBox>
         </Border>
-    </DockPanel>
+    </Grid>
 </UserControl>
