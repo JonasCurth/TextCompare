@@ -13,6 +13,7 @@
 
     <UserControl.Resources>
         <converter:InvertBoolToVisibilityConverter x:Key="invertBool2Vis"/>
+        <converter:FlowDocumentToXamlConverter x:Key="flowDocumentConverter"/>
     </UserControl.Resources>
 
     <Grid Margin="5" Grid.Column="0">
@@ -67,7 +68,14 @@
                 Padding="4"
                 Grid.Row="1">
 
-            <toolkit:RichTextBox BorderThickness="0" 
+            <local:BindableRichTextBox BorderThickness="0"
+                                       Background="Transparent"
+                                       Document="{Binding Text, Converter={StaticResource flowDocumentConverter}, 
+                                                    Mode=TwoWay, 
+                                                    RelativeSource={RelativeSource AncestorType=UserControl}}"
+                                       IsReadOnly="True"/>
+
+            <!--<toolkit:RichTextBox BorderThickness="0" 
                                  Background="Transparent"
                                  Text="{Binding Text, RelativeSource={RelativeSource AncestorType=UserControl}}"
                                  IsReadOnly="True">
@@ -75,7 +83,7 @@
                 <toolkit:RichTextBox.TextFormatter>
                     <toolkit:XamlFormatter/>
                 </toolkit:RichTextBox.TextFormatter>
-            </toolkit:RichTextBox>
+            </toolkit:RichTextBox>-->
         </Border>
     </Grid>
 </UserControl>

@@ -1,15 +1,11 @@
-﻿using Commands;
-using Compare.Utils;
-using Compare.Utils.Objects;
+﻿using Comparer.Utils;
+using Comparer.Utils.Objects;
 using Microsoft.Win32;
 using System;
-using System.Collections.Generic;
 using System.IO;
-using System.Linq;
 using System.Text;
 using System.Windows.Input;
 using TextComparerInterface.Helper;
-using Xceed.Wpf.Toolkit;
 
 namespace TextComparerInterface.ViewModels
 {
@@ -158,7 +154,7 @@ namespace TextComparerInterface.ViewModels
 
         public void Compute()
         {
-            Comparer difference = new Comparer();
+            Comparer.Utils.Comparer difference = new Comparer.Utils.Comparer();
 
             string reference = this.Reference.FromXAML();
             string textToCompare = this.TextToCompare.FromXAML();

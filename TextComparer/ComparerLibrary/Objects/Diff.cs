@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Compare.Utils.Objects
+namespace Comparer.Utils.Objects
 {
     /// <summary>
     /// Class representing one difference.

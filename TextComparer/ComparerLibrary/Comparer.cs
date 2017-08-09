@@ -1,13 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
-using Compare.Utils.Objects;
-using Compare.Utils.Extensions;
+using Comparer.Utils.Objects;
+using Comparer.Utils.Extensions;
 using System.Text.RegularExpressions;
 
-namespace Compare.Utils
+namespace Comparer.Utils
 {
     public class Comparer
     {

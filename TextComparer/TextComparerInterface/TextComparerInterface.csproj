@@ -47,9 +47,6 @@
     <Reference Include="System.Xaml">
       <RequiredTargetFramework>4.0</RequiredTargetFramework>
     </Reference>
-    <Reference Include="Text2Speech.Commands">
-      <HintPath>..\..\DialogTest\Text2Speech.Commands\bin\Debug\Text2Speech.Commands.dll</HintPath>
-    </Reference>
     <Reference Include="WindowsBase" />
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
@@ -77,9 +74,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="Controls\ComparerTextBox\BindableRichtextbox.xaml.cs">
-      <DependentUpon>BindableRichtextbox.xaml</DependentUpon>
-    </Compile>
+    <Compile Include="Controls\ComparerTextBox\BindableRichTextBox.cs" />
     <Compile Include="Controls\LockButton\LockButton.xaml.cs">
       <DependentUpon>LockButton.xaml</DependentUpon>
     </Compile>
@@ -88,10 +83,6 @@
     <Compile Include="Helper\XAMLWrapper.cs" />
     <Compile Include="ViewModels\TextCompareViewModel.cs" />
     <Compile Include="ViewModels\ViewModelBase.cs" />
-    <Page Include="Controls\ComparerTextBox\BindableRichtextbox.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Page Include="Controls\LockButton\LockButton.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -156,6 +147,10 @@
     <Content Include="fonts\fontawesome-webfont.svg" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Commands\Commands.csproj">
+      <Project>{51d73291-fb49-44d7-b97a-f8fa41369d70}</Project>
+      <Name>Commands</Name>
+    </ProjectReference>
     <ProjectReference Include="..\ComparerLibrary\ComparerLibrary.csproj">
       <Project>{72EA8EE9-6E43-4C9C-B1F0-23209218582C}</Project>
       <Name>ComparerLibrary</Name>

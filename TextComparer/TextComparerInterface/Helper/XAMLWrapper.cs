@@ -4,14 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
-using Compare.Utils.Objects;
+using Comparer.Utils.Objects;
 
 namespace TextComparerInterface.Helper
 {
     public static class XAMLWrapper
     {
-        public static string SectionStartTag = @"<Section xmlns=""http://schemas.microsoft.com/winfx/2006/xaml/presentation"" xml:space=""preserve"">";
-        public static string SectionEndTag = "</Section>";
+        public static string FlowDocumentStartTag = "<FlowDocument PagePadding=\"5,0,5,0\" AllowDrop=\"True\" xmlns=\"http://schemas.microsoft.com/winfx/2006/xaml/presentation\" xml:lang=\"de-de\">";
+        public static string FlowDocumentEndTag = "</FlowDocument>";
 
         public static string ParagraphStartTag = "<Paragraph>";
         public static string ParagraphEndTag = "</Paragraph>";
@@ -46,14 +46,14 @@ namespace TextComparerInterface.Helper
                 return null;
             }
 
-            if(plaintext.Contains(SectionStartTag) && plaintext.Contains(SectionStartTag))
+            if(plaintext.Contains(FlowDocumentStartTag) && plaintext.Contains(FlowDocumentStartTag))
             {
                 return plaintext;
             }
 
             StringBuilder xaml = new StringBuilder();
-            String[] lines = plaintext./*Replace("\r\n", "|").Replace('\u00b6', '|').*/Split(new char[] { '\u00b6' });
-            xaml.Append(SectionStartTag);
+            String[] lines = plaintext./*Replace("\r\n", "|").Replace('\u00b6', '|').*/Split(new string[] { "\r\n" }, StringSplitOptions.RemoveEmptyEntries);
+            xaml.Append(FlowDocumentStartTag);
 
             foreach (string line in lines)
             {
@@ -64,7 +64,7 @@ namespace TextComparerInterface.Helper
                 xaml.Append(xamlLine);                                    
             }
 
-            xaml.Append(SectionEndTag);
+            xaml.Append(FlowDocumentEndTag);
 
             return xaml.ToString();
         }
@@ -77,7 +77,7 @@ namespace TextComparerInterface.Helper
             }
 
             StringBuilder xaml = new StringBuilder();
-            xaml.Append(SectionStartTag);
+            xaml.Append(FlowDocumentStartTag);
             xaml.Append(ParagraphStartTag);
 
             foreach (Diff diff in diffs)
@@ -123,7 +123,7 @@ namespace TextComparerInterface.Helper
             }
 
             xaml.Append(ParagraphEndTag);
-            xaml.Append(SectionEndTag);
+            xaml.Append(FlowDocumentEndTag);
 
             return xaml.ToString();
         }

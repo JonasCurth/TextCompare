@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Compare.Utils.Extensions
+namespace Comparer.Utils.Extensions
 {
     internal static class CompatibilityExtensions
     {
