@@ -24,3 +24,5 @@
 /[Oo]bj/
 /[Ll]og/
 /TextComparer/ComparerLibrary/obj/Debug
+/TextComparer/.vs/TextComparer/v15
+/TextComparer/TextComparerInterface/obj
