@@ -1,4 +1,7 @@
 ﻿using System;
+using System.Windows;
+using System.Windows.Documents;
+using System.Windows.Media;
 
 namespace Comparer.Utils.Objects
 {
@@ -10,6 +13,37 @@ namespace Comparer.Utils.Objects
         public Operation Operation { get; set; }
 
         public string Text { get; set; }
+
+        public Run Run
+        {
+            get
+            {
+                if (!String.IsNullOrEmpty(this.Text))
+                {
+                    Run run = new Run(this.Text);
+
+                    switch (Operation)
+                    {
+                        case Operation.DELETE:
+                            run.Foreground = Brushes.Blue;
+                            break;
+                        case Operation.INSERT:
+                            run.TextDecorations = TextDecorations.Underline;
+                            run.Foreground = Brushes.Red;
+                            break;
+                        case Operation.EQUAL:
+                            run.Foreground = Brushes.Black;
+                            break;
+                        default:
+                            break;
+                    }
+
+                    return run;
+                }
+
+                return null;
+            }
+        }
 
         public Diff(Operation operation, string text)
         {

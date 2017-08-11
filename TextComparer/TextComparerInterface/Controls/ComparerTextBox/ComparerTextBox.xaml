@@ -57,10 +57,14 @@
         </DockPanel>
 
         <TextBlock Visibility="{Binding IsChecked, ElementName=IsLockedButton, Converter={StaticResource invertBool2Vis}}"
-                   Text="Feature unavailable at the moment."
+                   
+                   Foreground="Red"
                    HorizontalAlignment="Center"
                    VerticalAlignment="Center"
-                   Grid.Row="1"/>
+                   Grid.Row="1" IsHitTestVisible="False">
+            This Feature is currently <Underline>unavailable</Underline>."
+        </TextBlock>
+        
 
         <Border BorderThickness="1" 
                 BorderBrush="Black" 
@@ -68,12 +72,10 @@
                 Padding="4"
                 Grid.Row="1">
 
-            <local:BindableRichTextBox BorderThickness="0"
-                                       Background="Transparent"
-                                       Document="{Binding Text, Converter={StaticResource flowDocumentConverter}, 
-                                                    Mode=TwoWay, 
-                                                    RelativeSource={RelativeSource AncestorType=UserControl}}"
-                                       IsReadOnly="True"/>
+            <RichTextBox x:Name="Editor"
+                         BorderThickness="0"
+                         Background="Transparent"
+                         IsReadOnly="True"/>
 
             <!--<toolkit:RichTextBox BorderThickness="0" 
                                  Background="Transparent"

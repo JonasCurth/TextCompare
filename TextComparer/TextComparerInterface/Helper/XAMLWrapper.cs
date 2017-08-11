@@ -69,7 +69,7 @@ namespace TextComparerInterface.Helper
             return xaml.ToString();
         }
 
-        public static string ToXAML(this List<Diff> diffs)
+        public static string DiffConverter(this List<Diff> diffs)
         {
             if(null == diffs)
             {
@@ -105,7 +105,7 @@ namespace TextComparerInterface.Helper
                             runStartTag.Append($@"{ForegroundProperty}""Blue""");
                             break;
                         case Operation.INSERT:
-                            runStartTag.Append($@"{ForegroundProperty}""Red""");
+                            runStartTag.Append($@"{ForegroundProperty}""Red"" TextDecorations=""Strikethrough""");
                             break;
                         case Operation.EQUAL:
                             break;
@@ -137,6 +137,18 @@ namespace TextComparerInterface.Helper
             }
 
             return newText.ToString();
+        }
+
+        public static string CreateTextWithFormatTags(this DiffCollection diffcollection)
+        {
+            StringBuilder text = new StringBuilder();
+
+            foreach (Diff diff in diffcollection)
+            {
+                text.Append($"[{(int)diff.Operation}]{diff.Text}[{(int)diff.Operation}]|");
+            }
+
+            return text.ToString();
         }
 
     }

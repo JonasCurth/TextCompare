@@ -116,7 +116,7 @@ namespace TextComparerInterface.ViewModels
         {
             try
             {
-                this.TextToCompare = File.ReadAllText(this.OpenFileDialog(), Encoding.Default).ToXAML();
+                this.TextToCompare = File.ReadAllText(this.OpenFileDialog(), Encoding.Default)/*.ToXAML()*/;
             }
             catch (Exception)
             {
@@ -140,7 +140,7 @@ namespace TextComparerInterface.ViewModels
         {
             try
             {
-                this.Reference = File.ReadAllText(this.OpenFileDialog(), Encoding.Default).ToXAML();
+                this.Reference = File.ReadAllText(this.OpenFileDialog(), Encoding.Default)/*.ToXAML()*/;
             }
             catch (Exception)
             {
@@ -156,13 +156,13 @@ namespace TextComparerInterface.ViewModels
         {
             Comparer.Utils.Comparer difference = new Comparer.Utils.Comparer();
 
-            string reference = this.Reference.FromXAML();
-            string textToCompare = this.TextToCompare.FromXAML();
+            string reference = this.Reference/*.FromXAML()*/;
+            string textToCompare = this.TextToCompare/*.FromXAML()*/;
 
             try
             {
                 DiffCollection diffCollection = difference.Compare(reference, textToCompare, true);
-                this.TextToCompare = diffCollection.ToXAML();
+                this.TextToCompare = diffCollection.CreateTextWithFormatTags();
             }
             catch { }
         }

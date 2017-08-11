@@ -26,9 +26,20 @@
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
 
-            <Comparer:ComparerTextBox Margin="5" Command="{Binding OpenTextToCompareCommand}" Title="Vergleichstext" Text="{Binding TextToCompare, UpdateSourceTrigger=PropertyChanged}" IsLocked="True"/>
+            <Comparer:ComparerTextBox x:Name="TextToCompareWindow"
+                                      Margin="5" 
+                                      Command="{Binding OpenTextToCompareCommand}" 
+                                      Title="Vergleichstext" 
+                                      Text="{Binding TextToCompare, UpdateSourceTrigger=PropertyChanged}" 
+                                      IsLocked="True"/>
 
-            <Comparer:ComparerTextBox Margin="5" Command="{Binding OpenReferenceCommand}" Grid.Column="1" Title="Referenztext" Text="{Binding Reference, UpdateSourceTrigger=PropertyChanged}" IsLocked="True"/>
+            <Comparer:ComparerTextBox x:Name="ReferenceWindow" 
+                                      Margin="5" 
+                                      Command="{Binding OpenReferenceCommand}" 
+                                      Grid.Column="1" 
+                                      Title="Referenztext" 
+                                      Text="{Binding Reference, UpdateSourceTrigger=PropertyChanged}" 
+                                      IsLocked="True"/>
 
         </Grid>
 
